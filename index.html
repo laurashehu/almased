@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
 
   <title>Almased</title>
 </head>
+
 <body>
-    <div class="page-container">
-  <div class="topnav">
-    <div class="nav-left">
-      <img src="assets/logo/almasedLogo.png" alt="Almased Logo" class="logo" />
+  <div class="page-container">
+    <div class="topnav">
+      <div class="nav-left">
+        <img src="assets/logo/almasedLogo.png" alt="Almased Logo" class="logo" />
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="hamburger" id="hamburger">
+        <!-- Hamburger Menu -->
+        <i class="fas fa-bars hamburger" onclick="toggleMenu()"></i>
+
+      </div>
+      <div class="nav-container" id="navContainer">
+        <div class="nav-right">
+          <a href="#shop" class="nav-link shop-link">SHOP</a>
+          <a href="#home">About Almased</a>
+          <a href="#news">Science</a>
+          <a href="#contact">Results</a>
+          <a href="#about">Health Goals</a>
+          <a href="#howto">How to Use</a>
+          <a href="#learn">Learn</a>
+
+          <!-- Icons -->
+<!-- Search Icon -->
+<span class="icon-wrapper">
+  <i class="ri-search-line icon"></i>
+  <i class="ri-search-fill icon hover-icon"></i>
+</span>
+
+<!-- User Icon -->
+<span class="icon-wrapper">
+  <i class="ri-user-line icon"></i>
+  <i class="ri-user-fill icon hover-icon"></i>
+</span>
+
+<!-- Cart Icon -->
+<span class="icon-wrapper">
+  <i class="ri-shopping-cart-line icon"></i>
+  <i class="ri-shopping-cart-fill icon hover-icon"></i>
+</span>
+
+
+        </div>
+      </div>
     </div>
-
-        <!-- Hamburger Button -->
-    <div class="hamburger" id="hamburger">
-      <!-- Hamburger Menu -->
-      <i class="fas fa-bars hamburger" onclick="toggleMenu()"></i>
-
-    </div>
-    <div class="nav-container" id="navContainer">
-    <div class="nav-right">
-      <a href="#shop" class="nav-link shop-link">SHOP</a>
-      <a href="#home">About Almased</a>
-      <a href="#news">Science</a>
-      <a href="#contact">Results</a>
-      <a href="#about">Health Goals</a>
-      <a href="#howto">How to Use</a>
-      <a href="#learn">Learn</a>
-
-        <!-- Icons -->
-  <div class="nav-icons">
-    <i class="fas fa-search icon"></i>
-    <i class="fas fa-user icon"></i>
-    <i class="fas fa-shopping-cart icon"></i>
   </div>
-     </div>
-    </div>
-  </div>
-</div>
 
-<script>
-  function toggleMenu() {
-    const nav = document.querySelector('.nav-right');
-    nav.classList.toggle('show');
-  }
-</script>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.nav-right');
+      nav.classList.toggle('show');
+    }
+  </script>
 
 
 </body>
+
 </html>

@@ -64,23 +64,36 @@ body {
   font-weight: bold;
   border-bottom: 2px solid #55ab26;
 }
-
-/* ICONS */
-.nav-icons {
-  display: flex;
-  gap: 14px;
-  margin-left: 16px;
+/* ICON WRAPPER */
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
 }
 
+/* Default icon (outline) */
 .icon {
   color: #55ab26;
   font-size: 20px;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: opacity 0.2s ease, color 0.2s ease;
 }
 
-.icon:hover {
-  color: #242424;
+/* Hover icon (solid) */
+.icon-wrapper .hover-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* On hover: hide outline, show solid */
+.icon-wrapper:hover .hover-icon {
+  opacity: 1;
+}
+
+.icon-wrapper:hover .icon:not(.hover-icon) {
+  opacity: 0;
 }
 
 /*  HAMBURGER (mobile)  */
