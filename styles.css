@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #3f3f3f;
+  background-color: #ffffff;
   font-family: 'Jost', sans-serif;
 }
 
@@ -395,7 +395,7 @@ body {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  margin-top: -50px;
+  margin-top: -100px;
   display: flex;
   flex-direction: column;
 }
@@ -625,5 +625,158 @@ body {
   
   .circle-label {
     font-size: 0.6rem;
+  }
+}
+
+
+
+
+/*nutrition goals section*/
+.nutrition-goals {
+  /* Remove top/bottom spacing to "glue" to adjacent section */
+  padding: 0;
+  margin: 0;
+}
+
+.goals-wrapper {
+  background-color: white;
+  padding: 24px 20px;
+  border-radius: 0; /* Remove radius to make it flush with other sections */
+  box-shadow: none; /* Or use: 0 1px 3px rgba(0,0,0,0.03) for a soft effect */
+  width: 100%;
+}
+
+.goals-container {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.goal-button {
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  align-items: flex-start; /* align content to the left */
+  justify-content: center;
+  gap: 4px;                 /* space between + and text */
+  padding: 10px 40px;
+  border-radius: 12px;
+  font-size: 17px;
+  border: 2px solid #dcdcdc;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: left;
+}
+
+
+
+.goal-button span {
+  font-weight: 500;
+}
+
+.goal-active {
+  background-color: #48b237;
+  color: white;
+  border-color: #48b237;
+}
+
+.goal-button:not(.goal-active) {
+  background-color: white;
+  color: #48b237;
+}
+
+.goal-button.goal-all {
+  color: #333;
+  background-color: #f9f4f4;
+  border-color: #f0eaea;
+}
+.goal-button span {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+
+.plus {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+/*welcome pack section*/
+
+.floating-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1500px;
+  margin: 40px auto;
+  background: #f1e8e6;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  overflow: hidden;
+
+}
+
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.content-side {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; /* Center text */
+  font-weight: 100;
+}
+
+.content-side h2 {
+  margin-bottom: 16px;
+  font-weight: 100;
+  font-size: 4rem; /* bigger */
+  color: #55ab26;
+  font-family: 'Jost', sans-serif;
+}
+
+.content-side p {
+  margin-bottom: 24px;
+  font-size: 1.2rem; /* bigger */
+  font-weight: 100;
+  color: #55ab26;
+  font-family: 'Jost', sans-serif;
+}
+
+.btn {
+  padding: 20px 55px;
+  background-color: #55ab26;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: 'Jost', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  margin: 0 auto; /* center button */
+}
+
+.btn:hover {
+  background-color: #3e7d19;
+}
+
+
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .floating-container {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+
+  .image-side {
+    max-height: 200px;
   }
 }
