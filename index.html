@@ -8,28 +8,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
-
   <title>Almased</title>
 </head>
 
 <body>
   <div class="page-container">
-
-
     <div class="topnav">
-
-       <!-- Hamburger Button -->
+      <!-- Hamburger Button (mobile only) -->
       <div class="hamburger" id="hamburger" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
       </div>
-     
+
+      <!-- Logo -->
       <div class="nav-left">
         <img src="assets/logo/almasedLogo.png" alt="Almased Logo" class="logo" />
       </div>
 
-
-      <div class="nav-container" id="navContainer">
-        <div class="nav-right">
+      <!-- Desktop Navigation Structure -->
+      <div class="nav-container">
+        <!-- Navigation Links -->
+        <div class="nav-links" id="navMenu">
           <a href="#shop" class="nav-link shop-link">SHOP</a>
           <a href="#home">About Almased</a>
           <a href="#news">Science</a>
@@ -37,28 +35,22 @@
           <a href="#about">Health Goals</a>
           <a href="#howto">How to Use</a>
           <a href="#learn">Learn</a>
+        </div>
 
-          <!-- Icons -->
-<!-- Search Icon -->
-<div class="nav-icons">
-  <!-- Icons -->
-  <span class="icon-wrapper">
-    <i class="ri-search-line icon"></i>
-    <i class="ri-search-fill icon hover-icon"></i>
-  </span>
-
-  <span class="icon-wrapper">
-    <i class="ri-user-line icon"></i>
-    <i class="ri-user-fill icon hover-icon"></i>
-  </span>
-
-  <span class="icon-wrapper">
-    <i class="ri-shopping-cart-line icon"></i>
-    <i class="ri-shopping-cart-fill icon hover-icon"></i>
-  </span>
-</div>
-
-
+        <!-- Icons (always on the right) -->
+        <div class="nav-icons">
+          <span class="icon-wrapper">
+            <i class="ri-search-line icon"></i>
+            <i class="ri-search-fill icon hover-icon"></i>
+          </span>
+          <span class="icon-wrapper">
+            <i class="ri-user-line icon"></i>
+            <i class="ri-user-fill icon hover-icon"></i>
+          </span>
+          <span class="icon-wrapper">
+            <i class="ri-shopping-cart-line icon"></i>
+            <i class="ri-shopping-cart-fill icon hover-icon"></i>
+          </span>
         </div>
       </div>
     </div>
@@ -66,12 +58,10 @@
 
   <script>
     function toggleMenu() {
-      const nav = document.querySelector('.nav-right');
+      const nav = document.getElementById('navMenu');
       nav.classList.toggle('show');
     }
   </script>
-
-
 </body>
 
 </html>
