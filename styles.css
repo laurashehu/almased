@@ -374,22 +374,24 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 6.3rem;
   margin-bottom: 20px;
-  line-height: 1.2;
+  font-weight: 100;
+  line-height: 1;
 }
 
 .hero-text p {
-  font-size: 1.25rem;
+  font-size: 3rem;
   margin-bottom: 30px;
+  font-weight: 100;
   max-width: 400px;
   line-height: 1.5;
 }
 
 .btn-yellow {
   display: inline-block;
-  padding: 12px 25px;
-  font-size: 1.1rem;
+  padding: 25px 40px;
+  font-size: 1.3rem;
   background-color: #FFD700;
   color: #181818;
   font-weight: 600;
