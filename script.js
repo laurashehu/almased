@@ -71,3 +71,25 @@ playPauseBtn.addEventListener("click", () => {
 // Initial
 showImage(currentImage);
 startSlideshow();
+
+
+//funtion to switch tabs
+const buttons = document.querySelectorAll('.tab-btn');
+const tabs = document.querySelectorAll('.tab-content');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.getAttribute('data-tab');
+    const targetTab = document.getElementById(target);
+
+    if (!targetTab) return;
+
+    buttons.forEach(b => b.classList.remove('active'));
+    tabs.forEach(tab => tab.classList.remove('active'));
+
+    btn.classList.add('active');
+    targetTab.classList.add('active');
+  });
+});
+
+
