@@ -1,0 +1,73 @@
+
+//hamburger menu function
+    function toggleMenu() {
+      const nav = document.getElementById('navMenu');
+      nav.classList.toggle('show');
+    }
+
+
+
+
+//function: slideshow of the hero section
+const heroBanner = document.getElementById("heroBanner");
+const playPauseBtn = document.getElementById("playPauseBtn");
+const iconPlay = document.getElementById("icon-play");
+const iconPause = document.getElementById("icon-pause");
+const indicators = document.getElementById("indicators");
+
+const images = [
+  "assets/images/hero-bg.jpg",     // 1st
+  "assets/images/hero-bg1.jpg",    // 2nd
+  "assets/images/hero-bg.jpg",     // 3rd
+  "assets/images/hero-bg1.jpg"     // 4th
+];
+
+
+let currentImage = 0;
+let intervalId = null;
+const delay = 4000;
+
+// Create indicators
+images.forEach((_, index) => {
+  const dot = document.createElement("div");
+  dot.classList.add("indicator");
+  if (index === 0) dot.classList.add("active");
+  indicators.appendChild(dot);
+});
+
+const indicatorDots = document.querySelectorAll(".indicator");
+
+function showImage(index) {
+  heroBanner.style.backgroundImage = `url(${images[index]})`;
+
+  indicatorDots.forEach(dot => dot.classList.remove("active"));
+  indicatorDots[index].classList.add("active");
+}
+
+function nextImage() {
+  currentImage = (currentImage + 1) % images.length;
+  showImage(currentImage);
+}
+
+function startSlideshow() {
+  if (!intervalId) {
+    intervalId = setInterval(nextImage, delay);
+    iconPlay.style.display = "none";
+    iconPause.style.display = "block";
+  }
+}
+
+function stopSlideshow() {
+  clearInterval(intervalId);
+  intervalId = null;
+  iconPlay.style.display = "block";
+  iconPause.style.display = "none";
+}
+
+playPauseBtn.addEventListener("click", () => {
+  intervalId ? stopSlideshow() : startSlideshow();
+});
+
+// Initial
+showImage(currentImage);
+startSlideshow();

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+
   <title>Almased</title>
 </head>
 
@@ -59,19 +60,14 @@
 <!-- Hero Banner Section -->
 <!-- Hero Banner Section -->
 <!-- Hero Banner Section -->
-<section class="hero-banner">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-text">
-      <div class="hero-tagline">
-        <span class="hero-line-1">Natural</span>
-        <span class="hero-line-2">Superfood</span>
-        <span class="hero-line-3">Protein</span>
-        <span class="hero-line-4">for optimal health</span>
-      </div>
-      <a href="#shop" class="btn-yellow">Start Almased Today →</a>
-    </div>
-    <div class="nutrition-circles-container">
+<section class="hero-banner" id="heroBanner" style="position: relative; color: white;">
+  <div class="hero-text">
+    <h1>Natural<br> Superfood<br> Protein</h1>
+    <p>for optimal health</p>
+    <a href="#shop" class="btn-yellow">Start Almased Today →</a>
+  </div>
+
+  <div class="nutrition-circles-container">
     <div class="nutrition-circles">
       <div class="nutrition-circle">
         <div class="circle-number">24g</div>
@@ -93,36 +89,22 @@
         <div class="circle-label">vitamins</div>
         <div class="circle-label">& minerals</div>
       </div>
-      </div>
     </div>
   </div>
-</section>
 
-<section class="nutrition-goals">
-  <div class="goals-wrapper">
-    <div class="goals-container">
-      <div class="goal-button goal-active">
-        <span class="plus">+</span>
-        <span>Daily Nutrition Meal</span>
-      </div>
-      <div class="goal-button">
-        <span class="plus">+</span> 
-        <span>Weight Loss</span>
-      </div>
-      <div class="goal-button">
-        <span class="plus">+</span>
-        <span>Muscle Preservation</span>
-      </div>
-      <div class="goal-button">
-        <span class="plus">+</span>
-        <span>Muscle Gain</span>
-      </div>
-      <div class="goal-button goal-all">
-        <span class="plus">+</span>
-        <span>All Health Goals</span>
-      </div>
-    </div>
-  </div>
+  <!-- Play/Pause Button -->
+  <button class="play-button" id="playPauseBtn" aria-label="Play or Pause Slideshow">
+    <svg id="icon-play" viewBox="0 0 100 100">
+      <polygon points="30,20 80,50 30,80" fill="white"/>
+    </svg>
+    <svg id="icon-pause" viewBox="0 0 100 100" style="display:none;">
+      <rect x="30" y="20" width="10" height="60" fill="white"/>
+      <rect x="60" y="20" width="10" height="60" fill="white"/>
+    </svg>
+  </button>
+
+  <!-- Indicators -->
+  <div class="indicator-container" id="indicators"></div>
 </section>
 
 
@@ -131,7 +113,7 @@
   <div class="content-side">
     <h2 >Get Started with 
      <br> Your Almased <br>
-      Welcome Pack</h2>
+      <h2>Welcome Pack</h2>
     <p>Lorem ipsum dolor sit amet consectetur. Et <br> aenean auctor pharetra risus vel vestibulum vel.<br> Sed pellentesque nibh arcu risus eget massa.</p>
     <button class="btn">SHOP NOW</button>
   </div>
@@ -142,12 +124,7 @@
 
 
 
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById('navMenu');
-      nav.classList.toggle('show');
-    }
-  </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
