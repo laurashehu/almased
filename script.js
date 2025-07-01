@@ -93,3 +93,30 @@ buttons.forEach(btn => {
 });
 
 
+
+//testimonials
+// Simple testimonial slider functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.testimonial-card');
+  const prevBtn = document.querySelectorAll('.prev');
+  const nextBtn = document.querySelectorAll('.next');
+  let currentIndex = 0;
+
+  function showCard(index) {
+    cards.forEach(card => card.classList.remove('active'));
+    cards[index].classList.add('active');
+  }
+
+  function nextCard() {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
+  }
+
+  function prevCard() {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showCard(currentIndex);
+  }
+
+  nextBtn.forEach(btn => btn.addEventListener('click', nextCard));
+  prevBtn.forEach(btn => btn.addEventListener('click', prevCard));
+});
