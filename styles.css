@@ -73,7 +73,7 @@ body {
 
 .nav-icons {
   display: flex;
-  gap: 15px;
+  gap: 1px;
 }
 
 .icon-wrapper {
