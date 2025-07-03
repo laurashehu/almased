@@ -120,3 +120,30 @@ document.addEventListener('DOMContentLoaded', function() {
   nextBtn.forEach(btn => btn.addEventListener('click', nextCard));
   prevBtn.forEach(btn => btn.addEventListener('click', prevCard));
 });
+
+
+
+// Initialize Glide Slider
+document.addEventListener('DOMContentLoaded', function () {
+  new Glide('.glide', {
+    type: 'carousel',
+    perView: 3, // 3 cards visible
+    gap: 10,
+    autoplay: 3000,
+    hoverpause: true,
+    animationDuration: 500,
+    breakpoints: {
+      1024: { perView: 2 },
+      768: { perView: 1 }
+    }
+  }).mount();
+  
+  // Plus button functionality
+  document.querySelectorAll('.plus-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const card = this.closest('.benefit-card');
+      // Add your click functionality here
+      console.log('Card clicked:', card.querySelector('h3').textContent);
+    });
+  });
+});

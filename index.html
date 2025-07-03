@@ -12,6 +12,7 @@
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
 
   <title>Almased</title>
 </head>
@@ -292,12 +293,98 @@
 
 
 
-<!---->
+
+<!-- Health Benefits Card Slider -->
+<section class="health-benefits-slider">
+  <div class="container">
+    <h2 class="section-title">Discover our health benefits</h2>
+    
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+          <!-- Card 1 -->
+          <div class="glide__slide">
+            <div class="benefit-card">
+              <button class="plus-btn">+</button>
+              <div class="card-img">
+                <img src="assets/images/active_travel.jpg" alt="Weight Loss">
+              </div>
+              <div class="card-content">
+                <h3>Weight Loss</h3>
+                <p>Scientifically proven natural weight loss</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="glide__slide">
+            <div class="benefit-card">
+              <button class="plus-btn">+</button>
+              <div class="card-img">
+                <img src="assets/images/tenis1.jpg" alt="GLP-1 Support">
+              </div>
+              <div class="card-content">
+                <h3>GLP-1 Support</h3>
+                <p>Retain 100% muscle mass while losing weight</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="glide__slide">
+            <div class="benefit-card">
+              <button class="plus-btn">+</button>
+              <div class="card-img">
+                <img src="assets/images/upon-1.jpg" alt="Anti-aging">
+              </div>
+              <div class="card-content">
+                <h3>Anti-aging</h3>
+                <p>Reduce biological age with glowing skin</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="glide__slide">
+            <div class="benefit-card">
+              <button class="plus-btn">+</button>
+              <div class="card-img">
+                <img src="assets/images/woman-size.jpg" alt="Sports Performance">
+              </div>
+              <div class="card-content">
+                <h3>Sports Performance</h3>
+                <p>Improve endurance and recovery time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="glide__lines" data-glide-el="controls[nav]">
+  <button class="glide__line" data-glide-dir="=0"></button>
+  <button class="glide__line" data-glide-dir="=1"></button>
+  <button class="glide__line" data-glide-dir="=2"></button>
+  <button class="glide__line" data-glide-dir="=3"></button>
+</div>
+      
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </body>
 
 </html>
