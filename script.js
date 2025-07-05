@@ -96,10 +96,11 @@ buttons.forEach(btn => {
 
 //testimonials
 // Simple testimonial slider functionality
+// Testimonial Slider
 document.addEventListener('DOMContentLoaded', function() {
   const cards = document.querySelectorAll('.testimonial-card');
-  const prevBtn = document.querySelectorAll('.prev');
-  const nextBtn = document.querySelectorAll('.next');
+  const prevBtns = document.querySelectorAll('.prev');
+  const nextBtns = document.querySelectorAll('.next');
   let currentIndex = 0;
 
   function showCard(index) {
@@ -117,8 +118,8 @@ document.addEventListener('DOMContentLoaded', function() {
     showCard(currentIndex);
   }
 
-  nextBtn.forEach(btn => btn.addEventListener('click', nextCard));
-  prevBtn.forEach(btn => btn.addEventListener('click', prevCard));
+  prevBtns.forEach(btn => btn.addEventListener('click', prevCard));
+  nextBtns.forEach(btn => btn.addEventListener('click', nextCard));
 });
 
 
