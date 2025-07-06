@@ -823,6 +823,7 @@ body {
 .testimonial-container {
   position: relative;
   max-width: 1400px;
+  max-height: 95vh;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -861,18 +862,18 @@ body {
 }
 
 .quote-mark.top {
-  top: 50px;
-  left: 80px;
+  top: 130px;
+  left: 60px;
 }
 
 .quote-mark.bottom {
-  bottom: 80px;
-  right: 80px;
+  bottom: 370px;
+  right: 250px;
   transform: rotate(180deg);
 }
 
 .testimonial-quote {
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1.3;
   color: #3e7d19;
   margin: 60px 0;
@@ -881,7 +882,7 @@ body {
 }
 
 .testimonial-author {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 30px;
   color: #3e7d19;
   font-family: Jost;
@@ -892,19 +893,23 @@ body {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  
 }
 
 .story-btn {
-  background: #55ab26;
-  color: white;
-  border: 0;
-  padding: 15px 30px;
-  font: 600 16px/1 'Jost', sans-serif;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  width: fit-content;
+    background: #55ab26;
+    color: white;
+    border: 0;
+    padding: 25px 46px;
+    font: 100 20px / 1 'Jost', sans-serif;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-left: 60px;
+    margin-top: -70px;
+
 }
 
 .story-btn:hover {
@@ -916,12 +921,13 @@ body {
 .slider-controls {
   display: flex;
   gap: 20px;
+  margin-left: 60px;
 }
 
 .arrow {
   background: none;
   border: 0;
-  font-size: 24px;
+  font-size: 30px;
   color: #55ab26;
   cursor: pointer;
   padding: 5px;
