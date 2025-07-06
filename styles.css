@@ -997,7 +997,7 @@ body {
   }
   
   .quote-mark.top {
-    top: 30px;
+    top: 50px;
     left: 30px;
   }
   
@@ -1025,16 +1025,27 @@ body {
   
   .testimonial-author {
     font-size: 1rem;
+    padding-bottom: 10px;
   }
   
   .story-btn {
-    padding: 12px 25px;
-    font-size: 14px;
-  }
+        padding: 12px 25px;
+        font-size: 14px;
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; /
+    }
   
   .testimonial-image {
     height: 300px;
   }
+  .slider-controls {
+
+    margin-top: -20px;
+    margin-left: -20px;
+    
+  }
+
 }
 
 
