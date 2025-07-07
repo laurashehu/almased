@@ -926,17 +926,24 @@ body {
 
 .arrow {
   background: none;
-  border: 0;
-  font-size: 30px;
-  color: #55ab26;
+  border: none;
   cursor: pointer;
   padding: 5px;
-  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: stroke 0.3s ease;
 }
 
-.arrow:hover {
-  color: #3e7d19;
+.arrow svg {
+  stroke: #55ab26;
+  transition: stroke 0.3s ease;
 }
+
+.arrow:hover svg {
+  stroke: #3e7d19;
+}
+
 
 .testimonial-image {
   height: 100%;
@@ -1625,9 +1632,7 @@ body {
     height: 60px;
     font-size: 1.7rem;
   }
-  .img{
-    
-  }
+
 }
 
 @media (max-width: 768px) {
