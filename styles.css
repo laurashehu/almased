@@ -1667,7 +1667,7 @@ body {
 /*award winning section*/
 
 .award-image-section {
-  padding: 60px 20px;
+  padding: 10px 20px 60px;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -1685,7 +1685,7 @@ body {
   display: block;
   object-fit: contain;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
 }
 
 
@@ -1711,14 +1711,15 @@ body {
   font-weight: 100;
   text-align: left;
   margin-bottom: -15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .newsletter-subtitle {
   font-size: 2.5rem;
   color: #238014;
-  font-weight: 500;
+  font-weight: 100;
   text-align: left;
-  /* Removed white-space, overflow, and ellipsis */
+
   line-height: 1.3;
   word-break: break-word;
 }
@@ -1808,7 +1809,7 @@ body {
 .footer {
   background-color: #4f8b2c;
   color: white;
-  padding: 60px 160px 200px;
+  padding: 60px 160px 150px;
   font-family: 'Helvetica Neue', sans-serif;
 }
 
@@ -1872,5 +1873,40 @@ body {
 
   .footer-column {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 40px 20px 100px;
+    text-align: center;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+
+  .footer-logo img {
+    width: 160px;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    min-width: auto;
+  }
+
+  .footer-column strong {
+    font-size: 0.9rem;
+  }
+
+  .footer-column ul li {
+    font-size: 0.85rem;
   }
 }
