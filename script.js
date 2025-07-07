@@ -123,13 +123,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
+//health benefits
 // Initialize Glide Slider
 document.addEventListener('DOMContentLoaded', function () {
   new Glide('.glide', {
     type: 'carousel',
     perView: 3, // 3 cards visible
-    gap: 10,
+    gap: 2.5,
     autoplay: 3000,
     hoverpause: true,
     animationDuration: 500,
