@@ -151,3 +151,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+//doctor testimonial slider
+if (document.querySelector('#almTestimonialGlide')) {
+  new Glide('#almTestimonialGlide', {
+    type: 'carousel',
+    perView: 1,
+    autoplay: 5000,
+    hoverpause: true,
+    animationDuration: 600
+  }).mount();
+}
