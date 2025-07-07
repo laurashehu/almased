@@ -1,7 +1,7 @@
 ﻿# Almased Project
 # 🌿 Almased Website – Health & Nutrition Landing Platform
 
-A fully responsive, visually engaging landing website for Almased – a superfood protein brand. This site showcases health benefits, scientific validation, product sliders, testimonials, and more. Built using HTML, CSS, JavaScript, and Glide.js.
+A fully responsive, visually engaging landing website for Almased , a superfood protein brand. This site showcases health benefits, scientific validation, product sliders, testimonials, and more. Built using HTML, CSS, JavaScript, and Glide.js.
 
 ---
 
