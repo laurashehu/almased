@@ -5,11 +5,6 @@ A fully responsive, visually engaging landing website for Almased – a superfoo
 
 ---
 
-## 🚀 Live Demo
-[🌐 View Demo](https://your-live-site-link.com) <!-- Optional: Replace or remove -->
-
----
-
 ## 📌 Features
 
 - ⚡ Hero banner with dynamic CTAs
