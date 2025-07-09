@@ -183,7 +183,6 @@ body {
   border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin-bottom: -100px;
 
 }
@@ -191,7 +190,7 @@ body {
 .btn-yellow:hover {
   background-color: #FFEE00;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+
 }
 
 .nutrition-circles {
