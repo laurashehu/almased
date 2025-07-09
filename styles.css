@@ -362,7 +362,17 @@ body {
   .hero-text h1{
     font-size: 5rem;
   }
+  .image-side img {
+    width: 50%;
+    height: auto;
+    margin:  auto;
 
+}
+
+   .content-side {
+      padding-bottom: 10px;
+
+}
 }
 
 
