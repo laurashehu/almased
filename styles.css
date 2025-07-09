@@ -1696,7 +1696,8 @@ body {
   }
 
   .alm-doctors {
-    gap: 10px;
+    gap: 60px;
+    font-size: 1.4rem;
    }
 
 }
