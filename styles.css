@@ -286,6 +286,14 @@ body {
 }
 
 
+@media(max-width:541px){
+
+  .metric h3{
+  font-size: 23rem;
+
+}
+}
+
 
 
 
@@ -1431,6 +1439,17 @@ body {
   .metabolic-health-section h2 {
     font-size: 22px;
   }
+}
+
+@media(max-width:541px){
+
+  .metric h3{
+  font-size: 3.5rem;
+
+}
+ .metric p{
+  font-size: 1.3rem;
+ }
 }
 
 
