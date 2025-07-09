@@ -364,7 +364,12 @@ body {
   }
   .image-side img {
 
-    margin-top: 120px;
+    max-height: 200px;
+    width: auto;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 190px;
+        
 
 }
 
@@ -620,9 +625,6 @@ body {
     max-width: 90%;
   }
 
-  .image-side {
-    max-height: 200px;
-  }
   
   .content-side h2 {
     font-size: 3rem;
@@ -744,6 +746,19 @@ body {
   }
 }
 
+
+@media(max-width: 630px){
+      .image-side img{
+        height: 100px;
+        width: auto;
+        margin: auto;
+        margin-bottom: 20px;
+        
+    }
+    .content-side{
+      padding-bottom: -30px;
+    }
+}
 
 /* For desktop layout */
 @media (min-width: 992px) {
