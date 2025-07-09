@@ -1061,10 +1061,15 @@ body {
 
 /*discover our health benefits*/
 
-/* Health Benefits Card Slider - Updated for Taller Images */
+
 .health-benefits-slider {
   padding: 60px 0;
   background: #f1e8e6;
+}
+/* Main container adjustments */
+.health-benefits-slider .glide {
+  --card-width: 380px; /* Slimmer base width */
+  --gap-size: 5px;    /* Tighter gap */
 }
 
 .container {
@@ -1090,6 +1095,14 @@ body {
   height: 500px; /* Increased from 350px */
   display: flex;
   flex-direction: column;
+  /*i have to remember this change*/
+  width: 390px; /* Set fixed width for cards */
+  max-width: 100%;
+}
+.health-benefits-slider .benefit-card {
+  width: 100%;
+  height: 500px;
+  /* Keep other card styles */
 }
 
 .plus-btn {
@@ -1160,9 +1173,23 @@ body {
   opacity: 0.9;
 }
 
+
 /* Glide Slider Customization */
 .glide__slide {
   padding: 10px;
+}
+/*remember*/
+.glide__slides {
+  justify-content: center; /* Centers cards when fewer than perView */
+  gap: 10px;
+}
+
+.health-benefits-slider .glide__slides {
+  gap: var(--gap-size); /* Space between slides */
+}
+.health-benefits-slider .glide__slide {
+  width: var(--card-width) !important;
+  padding: 0 5px; /* Minimal side padding */
 }
 
 .glide__arrows {
@@ -1188,19 +1215,22 @@ body {
   background: #55ab26;
   color: #fff;
 }
+.health-benefits-slider .glide__track {
+  margin: 0 -10px; /* Pull slides closer with negative margin */
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .benefit-card {
-    height: 380px; /* Adjusted from 320px */
+    height: 380px; 
   }
   
   .card-img {
-    height: 240px; /* Adjusted from 180px */
+    height: 240px; 
   }
   
   .card-content {
-    height: 140px; /* Maintain same height */
+    height: 140px;
   }
   
   .section-title {
@@ -1214,15 +1244,15 @@ body {
   }
   
   .benefit-card {
-    height: 350px; /* Adjusted from 300px */
+    height: 350px; 
   }
   
   .card-img {
-    height: 210px; /* Adjusted from 160px */
+    height: 210px; 
   }
   
   .card-content {
-    height: 140px; /* Maintain same height */
+    height: 140px;
   }
   
   .card-content h3 {
@@ -1233,7 +1263,7 @@ body {
 
 
 /*glide lines*/
-/* Add this to your CSS */
+
 .glide__lines {
   display: flex;
   justify-content: center;

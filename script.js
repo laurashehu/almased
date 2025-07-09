@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
   new Glide('.glide', {
     type: 'carousel',
     perView: 3, // 3 cards visible
-    gap: 2.5,
+    gap: 5,
     autoplay: 3000,
     hoverpause: true,
     animationDuration: 500,
