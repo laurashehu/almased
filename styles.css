@@ -115,6 +115,11 @@ body {
   user-select: none;
 }
 
+@media screen and (max-width: 992px) {
+.nav-icons{
+  transform: translate(10px);
+}
+}
 
 
 
@@ -1103,8 +1108,8 @@ body {
 }
 .health-benefits-slider .benefit-card {
   width: 100%;
-  height: 500px;
-  /* Keep other card styles */
+  height: 100%;
+
 }
 
 .plus-btn {
