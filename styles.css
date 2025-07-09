@@ -75,7 +75,7 @@ body {
 .nav-icons {
   display: flex;
   gap: 4px;
-  transform: translateX(-20px);
+  transform: translateX(-60px);
 }
 
 .icon-wrapper {
