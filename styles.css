@@ -47,6 +47,7 @@ body {
   align-items: center;
   gap: 20px;
   padding-top: 8px;
+  margin-right: 50px;
 }
 
 .nav-links a {
@@ -73,7 +74,8 @@ body {
 
 .nav-icons {
   display: flex;
-  gap: 1px;
+  gap: 4px;
+  transform: translateX(-20px);
 }
 
 .icon-wrapper {
