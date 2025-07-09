@@ -1695,6 +1695,10 @@ body {
     font-size: 1.7rem;
   }
 
+  .alm-doctors {
+    gap: 10px;
+   }
+
 }
 
 @media (max-width: 768px) {
