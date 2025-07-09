@@ -367,7 +367,6 @@ body {
 
 
 
-
 /* Tabs Section */
 .tabs-section {
   margin-top: 40px;
@@ -480,7 +479,7 @@ body {
   .topnav {
     flex-wrap: wrap;
     height: auto;
-    padding: 15px 20px;
+    padding: 30px 20px;
   }
   
   .hamburger {
@@ -497,11 +496,12 @@ body {
   
   .logo {
     height: 40px;
-    margin: 0 auto;
+    margin-right: -50px;
   }
   
   .nav-icons {
     order: 3;
+   
   }
   
   .nav-links {
@@ -613,6 +613,7 @@ body {
   .content-side h2 {
     font-size: 3rem;
   }
+
 }
 
 
@@ -690,11 +691,13 @@ body {
   }
   
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 4rem;
+    margin-top: -30px;
   }
   
   .hero-text p {
     font-size: 1.1rem;
+    margin-bottom: -40px;
   }
   
   .btn-yellow {
