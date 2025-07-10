@@ -292,8 +292,12 @@ body {
   font-size: 23rem;
 
 }
-}
 
+    .hero-text h1 {
+        font-size: 4rem;
+        margin-top: -20px;
+    }
+  }
 
 
 
